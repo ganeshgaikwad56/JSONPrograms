@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StockAccountManagement;
+using System;
 
 namespace InventoryDataManagement
 {
@@ -6,39 +7,39 @@ namespace InventoryDataManagement
     {
         static void Main(string[] args)
         {
-            string path = "C:/Users/HP/Desktop/fellowShip/InventoryDataManagement/Rice.json";
+            string path = "C:/Users/HP/Desktop/fellowShip/StockAccountManagement/Stock.json";
 
-            FetchJsonForRice fetchJsonForRice = new FetchJsonForRice();
-            Rice data = fetchJsonForRice.Read(path);
+            FetchJasonForStock fetchJsonForStock = new FetchJasonForStock();
+            Stock data = fetchJsonForStock.Read(path);
 
-            for(int i=0; i<data.typesofRice.Count; i++)
+            for (int i = 0; i < data.tataGroup.Count; i++)
             {
-                Console.WriteLine(data.typesofRice[i].name);
-                Console.WriteLine(data.typesofRice[i].weight);
-                Console.WriteLine(data.typesofRice[i].Price);
-                int dataofrice = data.typesofRice[i].weight * data.typesofRice[i].Price;
-                Console.WriteLine("Total Price: " + dataofrice);
+                Console.WriteLine(data.tataGroup[i].Stockname);
+                Console.WriteLine(" Number of Shares buyed: " + data.tataGroup[i].Shares);
+                Console.WriteLine("Buying Price: " + data.tataGroup[i].Price);
+                int dataofstock = data.tataGroup[i].Shares * data.tataGroup[i].Price;
+                Console.WriteLine("Total Price: " + dataofstock);
                 Console.WriteLine("---------***--------******--------");
             }
 
-            for (int i = 0; i < data.typesofPulse.Count; i++)
+            for (int i = 0; i < data.adaniGroup.Count; i++)
             {
-                Console.WriteLine(data.typesofPulse[i].name);
-                Console.WriteLine(data.typesofPulse[i].weight);
-                Console.WriteLine(data.typesofPulse[i].Price);
-                int dataofpulse = data.typesofPulse[i].weight * data.typesofPulse[i].Price;
-                Console.WriteLine("Total Price: " + dataofpulse);
+                Console.WriteLine(data.adaniGroup[i].Stockname);
+                Console.WriteLine(" Number of Shares buyed: " + data.adaniGroup[i].Shares);
+                Console.WriteLine("Buying Price: " + data.adaniGroup[i].Price);
+                int dataofshare = data.adaniGroup[i].Shares * data.adaniGroup[i].Price;
+                Console.WriteLine("Total Price: " + dataofshare);
                 Console.WriteLine("---------***--------******--------");
 
             }
 
-            for (int i = 0; i < data.typesofWheat.Count; i++)
+            for (int i = 0; i < data.adityaBirlaGroup.Count; i++)
             {
-                Console.WriteLine(data.typesofWheat[i].name);
-                Console.WriteLine(data.typesofWheat[i].weight);
-                Console.WriteLine(data.typesofWheat[i].Price);
-                int wheat = data.typesofWheat[0].weight * data.typesofWheat [i].Price;
-                Console.WriteLine ("Total Price: " + wheat);
+                Console.WriteLine(data.adityaBirlaGroup[i].Stockname);
+                Console.WriteLine(" Number of Shares buyed: " + data.adityaBirlaGroup[i].Shares);
+                Console.WriteLine("Buying Price: " + data.adityaBirlaGroup[i].Price);
+                int dataofbirla = data.adityaBirlaGroup[0].Shares * data.adityaBirlaGroup[i].Price;
+                Console.WriteLine("Total Price: " + dataofbirla);
                 Console.WriteLine("---------***--------******--------");
 
             }
