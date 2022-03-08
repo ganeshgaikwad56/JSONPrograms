@@ -1,0 +1,48 @@
+{
+  "TataGroup": [
+    {
+      "Stockname": "TATAMOTOR",
+      "Shares": "100",
+      "price": "392"
+    },
+    {
+      "Stockname": "TATAPOWER",
+      "Shares": "35",
+      "price": "224"
+    },
+    {
+      "Stockname": "TCS",
+      "Shares": "20",
+      "price": "2100"
+    }
+  ],
+  "AdaniGroup": [
+    {
+      "Stockname": "ADANIPORTS",
+      "Shares": "21",
+      "price": "656"
+    },
+    {
+      "Stockname": "ADANIPOWER",
+      "Shares": "78",
+      "price": "89"
+    },
+    {
+      "Stockname": "ADANIGREEN",
+      "Shares": "33",
+      "price": "860"
+    }
+  ],
+  "AdityaBirlaGroup": [
+    {
+      "Stockname": "GRASININDUSTRY",
+      "Shares": "20",
+      "price": "250"
+    },
+    {
+      "Stockname": "ULTRATECHCEMMENT",
+      "Shares": "15",
+      "price": "300"
+    }
+  ]
+}

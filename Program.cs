@@ -43,11 +43,6 @@ namespace InventoryDataManagement
 
             }
 
-            //Console.WriteLine(data.name);
-            //Console.WriteLine(data.);
-
-
-
         }
     }
 }
